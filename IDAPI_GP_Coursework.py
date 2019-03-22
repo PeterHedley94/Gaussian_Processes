@@ -257,13 +257,13 @@ if __name__ == '__main__':
     np.random.seed(42)
     sample = multivariateGaussianDraw(np.zeros((3000,)), np.identity(3000))
     print(sample.shape)
-    import matplotlib.pyplot as plt
-    plt.hist(sample,bins = 100)
-    plt.show()
+    #import matplotlib.pyplot as plt
+    #plt.hist(sample,bins = 100)
+    #plt.show()
     params = [0.5*np.log(1),np.log(0.1),0.5*np.log(0.5)]
     rbf  = RadialBasisFunction(params)
-    val = GaussianProcessRegression(np.random.standard_normal((300,300)),np.random.standard_normal((300,300)), rbf)
-    test = val.optimize(params)
+    #val = GaussianProcessRegression(np.random.standard_normal((300,300)),np.random.standard_normal((300,300)), rbf)
+    #test = val.optimize(params)
     ##########################
     # You can put your tests here - marking
     # will be based on importing this code and calling
